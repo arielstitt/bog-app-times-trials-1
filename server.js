@@ -26,7 +26,7 @@ db.on('open', ()=>{
 //middleware allows things to talk to each other
 app.use(logger('dev'))
 //logger gives you better error messages
-app.use(bodyParser, json())
+app.use(bodyParser.json())
 //bodyParser takes in requests from the DB and traslates them into JSON
 
 // Set up a get request that sends back "Hello World"
@@ -36,7 +36,7 @@ app.get('/', (req, res)=>{
 })
 
 // Tell your app to listen on port 3001, and console log when it connects.
-const PORT = process.env.PORT || 30001
+const PORT = process.env.PORT || 3001
 
 //log that the port is up and running on the port
 
