@@ -19,7 +19,7 @@ const mars = new Creature({
 
 
 
-//First we remove all the creatures
+// First we remove all the creatures
 
 // Creature.remove({})
 
@@ -29,6 +29,7 @@ const mars = new Creature({
 // }).then(()=>{
 //     console.save('Successfully Save')
 // }).then(()=> mongoose.connection.close())
+
 Creature.remove({})
   .then(() => luke.save())
   .then(() => console.log('Successful Save'))

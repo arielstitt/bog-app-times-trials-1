@@ -30,10 +30,23 @@ app.use(bodyParser.json())
 //bodyParser takes in requests from the DB and traslates them into JSON
 
 // Set up a get request that sends back "Hello World"
-
 app.get('/', (req, res)=>{
     res.send('Hello World!')
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Tell your app to listen on port 3001, and console log when it connects.
 const PORT = process.env.PORT || 3001

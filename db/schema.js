@@ -8,6 +8,7 @@ const CreatureSchema = new Schema({
 
 
 //this created the model inside of the schema
+//Models holds the data
 const Creature = mongoose.model('Creature', CreatureSchema)
 
 //I forgot to export the schema! 
